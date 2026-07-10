@@ -6,7 +6,8 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background:#ffffff;
+    background:#f8fafc;
+    color:#0f172a;
 }
 
 
@@ -335,11 +336,11 @@ body {
 }
 
 
-btn-outline {
+.btn-outline {
     background-color: transparent;
     border: 1px solid #2563eb;
     color: #2563eb;
-    cursor: alias;;
+    cursor: pointer;
 }
 
 .btn-outline:hover {
@@ -394,11 +395,6 @@ btn-outline {
 .btn-solid:hover {
     background-color: #1d4ed8;
     border-color: #1d4ed8;
-}
-
-
-body {
-    background-color: #f8fafc;
 }
 
 .newsletter-card {
