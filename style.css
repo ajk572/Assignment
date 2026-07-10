@@ -13,7 +13,6 @@ body{
 
 header{
     width:100%;
-    border-top:4px solid #1b1b1b;
 }
 
 .navbar{
@@ -75,3 +74,587 @@ header{
 .btn:hover{
     background:#1d46c5;
 }
+
+/* banner */
+
+body{
+    font-family:'Inter',sans-serif;
+}
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* Dark Overlay */
+
+.overlay{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    overflow:hidden;
+}
+
+.overlay img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
+.overlay::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.62);
+}
+
+/* Content */
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+
+    text-align:center;
+    color:white;
+
+    padding:20px;
+
+}
+
+/* Heading */
+
+.hero-content h1{
+    font-size:clamp(50px,7vw,70px);
+    font-weight:800;
+    line-height:1;
+
+    margin-bottom:30px;
+
+}
+
+.hero-content h1 span{
+    font-style:italic;
+    font-weight: bold;
+}
+
+/* Paragraph */
+
+.hero-content p{
+
+    max-width:760px;
+    margin:auto;
+    color:#dddddd;
+
+    font-size:1.45rem;
+
+    line-height:1.6;
+
+    margin-bottom:70px;
+
+    font-weight:400;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#3154ff;
+
+    padding:20px 45px;
+
+    border-radius:12px;
+    font-size:1.4rem;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#2344dc;
+    /* transform:translateY(-4px); */
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+}
+
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.speakers{
+    padding:70px 0;
+}
+
+.speakers h2{
+    text-align:center;
+    font-size:56px;
+    font-weight:700;
+    margin-bottom:50px;
+}
+
+.speaker-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.speaker-card{
+    background:#fff;
+    border:1px solid #e6e6e6;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.speaker-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.speaker-image{
+    width:100%;
+    height:320px;
+    background:#d9d9d9;
+}
+
+.speaker-content{
+    padding:22px;
+}
+
+.category{
+    display:block;
+    color:#245dff;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    letter-spacing:.5px;
+}
+
+.speaker-content h3{
+    font-size:34px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:12px;
+}
+
+.speaker-content p{
+    font-size:18px;
+    color:#666;
+    line-height:1.5;
+}
+
+
+.speaker-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* price bar */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+/* Section */
+.pricing-section {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: 0 1.25rem 4rem;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding: 0 1rem;
+}
+
+.pricing-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0b132b;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+.pricing-header p {
+    font-size: 1.125rem;
+    color: #64748b;
+}
+
+/* Pricing Grid Grid Layout */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    align-items: stretch;
+    margin: 0 auto 3rem;
+}
+
+/* Pricing Card Generic Styles */
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-section {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.plan-name {
+    font-size: 0.813rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #64748b;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.1;
+    margin: 0.5rem 0 0.25rem 0;
+    letter-spacing: -0.02em;
+}
+
+.price-sub {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+/* Features List Styling */
+.features-list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 0.938rem;
+    color: #334155;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Custom CSS Bullet Points to match image color */
+.features-list li::before {
+    content: "•";
+    color: #2563eb;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Button Styling */
+btn-outline {
+    background-color: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    cursor: alias;;
+}
+
+.btn-outline:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-dark-outline {
+    background-color: transparent;
+    border: 1px solid #0f172a;
+    color: #0f172a;
+}
+
+.btn-dark-outline:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+
+
+
+.pricing-card.pro {
+    background-color: #0b132b;
+    border-color: #0b132b;
+}
+
+.pro .card-header {
+    border-bottom-color: #1e293b;
+}
+
+.pro .plan-name {
+    color: #38bdf8;
+}
+
+.pro .price {
+    color: #ffffff;
+}
+
+.pro .price-sub {
+    color: #94a3b8;
+}
+
+.pro .features-list li {
+    color: #cbd5e1;
+}
+
+.pro .features-list li::before {
+    color: #38bdf8;
+}
+
+.btn-solid {
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    color: #ffffff;
+}
+
+.btn-solid:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+
+body {
+    background-color: #f8fafc;
+}
+
+/* Card Container */
+.newsletter-card {
+    background-color: #fcae49;
+    width: min(100%, 650px);
+    padding: 40px 50px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(105, 102, 102, 0.1);
+    margin: 0 auto;
+}
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
+
+/* Hexagon Logo Placeholder */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-hexagon {
+    background-color: transparent;
+    border: 2px solid #000;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: inline-block;
+}
+
+/* Headings & Text */
+h1 {
+    font-family: 'Georgia', serif; /* Serif font matching the image style */
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.email-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+/* Input Container & Icon */
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7b8a99;
+    font-size: 18px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #7b8a99;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    max-width: 500px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #222;
+}
+
+/* Footer Pagination Text */
+
+.new-sletter{
+    width: 500px;
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #0b1d33;
+    color: #64748b;
+    padding: 30px clamp(1.25rem, 3vw, 2rem);
+    font-size: 14px;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Left Content */
+.footer-left p {
+    margin: 0;
+}
+
+
+/* Right Content Grouping */
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the text links and the social icons */
+    flex-wrap: wrap;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #94a3b8; 
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 18px;
+}
+
