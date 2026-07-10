@@ -9,7 +9,6 @@ body{
     background:#ffffff;
 }
 
-/* Navbar */
 
 header{
     width:100%;
@@ -27,16 +26,12 @@ header{
     justify-content:space-between;
 }
 
-/* Logo */
-
 .logo{
     display:flex;
     align-items:center;
     gap:12px;
 }
 
-
-/* Navigation */
 
 .nav-links{
     list-style:none;
@@ -56,8 +51,6 @@ header{
     color:#2457e6;
 }
 
-/* Button */
-
 .btn{
     text-decoration:none;
     background:#2855df;
@@ -75,16 +68,8 @@ header{
     background:#1d46c5;
 }
 
-/* banner */
-
-body{
-    font-family:'Inter',sans-serif;
-}
-
 .hero{
-
     position:relative;
-
     width:100%;
     height:100vh;
 
@@ -95,13 +80,9 @@ body{
     overflow:hidden;
 }
 
-/* Dark Overlay */
-
 .overlay{
     position:absolute;
     inset:0;
-    z-index:0;
-    overflow:hidden;
 }
 
 .overlay img{
@@ -119,88 +100,48 @@ body{
     background:rgba(0,0,0,.62);
 }
 
-/* Content */
-
 .hero-content{
     position:relative;
-    z-index:2;
     max-width:900px;
-
     text-align:center;
     color:white;
-
     padding:20px;
-
 }
-
-/* Heading */
 
 .hero-content h1{
     font-size:clamp(50px,7vw,70px);
     font-weight:800;
     line-height:1;
-
     margin-bottom:30px;
-
+    color: #ffffff;
 }
 
 .hero-content h1 span{
     font-style:italic;
     font-weight: bold;
+    color: inherit;
 }
 
-/* Paragraph */
-
 .hero-content p{
-
     max-width:760px;
     margin:auto;
     color:#dddddd;
-
     font-size:1.45rem;
-
     line-height:1.6;
-
     margin-bottom:70px;
-
     font-weight:400;
-
 }
 
-/* Button */
-
 .btn{
-
     display:inline-block;
     text-decoration:none;
     color:white;
     background:#3154ff;
-
     padding:20px 45px;
-
     border-radius:12px;
     font-size:1.4rem;
     font-weight:600;
     transition:.3s;
-
-}
-
-.btn:hover{
-
-    background:#2344dc;
-    /* transform:translateY(-4px); */
-
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
 }
 
 .container{
@@ -220,7 +161,7 @@ body{
     margin-bottom:50px;
 }
 
-.speaker-grid{
+.speaker{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:30px;
@@ -280,10 +221,9 @@ body{
     display:block;
 }
 
-/* price bar */
+
 
 body {
-    font-family: 'Inter', sans-serif;
     background-color: #f8fafc;
     color: #0f172a;
     min-height: 100vh;
@@ -294,7 +234,7 @@ body {
     padding: 4rem 2rem;
 }
 
-/* Section */
+
 .pricing-section {
     width: min(100%, 1200px);
     margin: 0 auto;
@@ -310,17 +250,17 @@ body {
 .pricing-header h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #0b132b;
+    color: #0d162f;
     margin-bottom: 1rem;
     letter-spacing: -0.03em;
 }
 
 .pricing-header p {
     font-size: 1.125rem;
-    color: #64748b;
+    color: #69778c;
 }
 
-/* Pricing Grid Grid Layout */
+
 .pricing-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -330,7 +270,7 @@ body {
     margin: 0 auto 3rem;
 }
 
-/* Pricing Card Generic Styles */
+
 .pricing-card {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
@@ -368,7 +308,7 @@ body {
     color: #64748b;
 }
 
-/* Features List Styling */
+
 .features-list {
     list-style: none;
     margin-bottom: 2.5rem;
@@ -384,7 +324,7 @@ body {
     line-height: 1.5;
 }
 
-/* Custom CSS Bullet Points to match image color */
+
 .features-list li::before {
     content: "•";
     color: #2563eb;
@@ -394,7 +334,7 @@ body {
     top: -2px;
 }
 
-/* Button Styling */
+
 btn-outline {
     background-color: transparent;
     border: 1px solid #2563eb;
@@ -419,8 +359,6 @@ btn-outline {
 }
 
 
-
-
 .pricing-card.pro {
     background-color: #0b132b;
     border-color: #0b132b;
@@ -439,16 +377,13 @@ btn-outline {
 }
 
 .pro .price-sub {
-    color: #94a3b8;
+    color: #c2cfe1;
 }
 
 .pro .features-list li {
-    color: #cbd5e1;
+    color: #dadce0;
 }
 
-.pro .features-list li::before {
-    color: #38bdf8;
-}
 
 .btn-solid {
     background-color: #2563eb;
@@ -466,7 +401,6 @@ body {
     background-color: #f8fafc;
 }
 
-/* Card Container */
 .newsletter-card {
     background-color: #fcae49;
     width: min(100%, 650px);
@@ -478,7 +412,6 @@ body {
     margin: 0 auto;
 }
 
-/* Close Button (X) */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -503,35 +436,15 @@ body {
     margin-bottom: 20px;
 }
 
-.logo-hexagon {
-    background-color: transparent;
-    border: 2px solid #000;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 10px 12px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    display: inline-block;
-}
 
-/* Headings & Text */
 h1 {
-    font-family: 'Georgia', serif; /* Serif font matching the image style */
     font-size: 32px;
     font-weight: 500;
     color: #000;
     margin-bottom: 15px;
 }
 
-.subtitle {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    color: #000;
-    margin-bottom: 25px;
-}
 
-/* Form Styling */
 .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -547,7 +460,7 @@ h1 {
     align-self: center;
 }
 
-/* Input Container & Icon */
+
 .input-container {
     position: relative;
     width: 100%;
@@ -559,7 +472,6 @@ h1 {
     position: absolute;
     left: 15px;
     top: 50%;
-    transform: translateY(-50%);
     color: #7b8a99;
     font-size: 18px;
 }
@@ -578,7 +490,7 @@ h1 {
     color: #7b8a99;
 }
 
-/* Submit Button */
+
 .submit-btn {
     width: 100%;
     max-width: 500px;
@@ -597,13 +509,11 @@ h1 {
     background-color: #222;
 }
 
-/* Footer Pagination Text */
-
 .new-sletter{
     width: 500px;
 }
 
-/* Footer styling */
+
 .site-footer {
     background-color: #0b1d33;
     color: #64748b;
@@ -622,17 +532,10 @@ h1 {
     gap: 20px;
 }
 
-/* Left Content */
-.footer-left p {
-    margin: 0;
-}
-
-
-/* Right Content Grouping */
 .footer-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between the text links and the social icons */
+    gap: 25px; 
     flex-wrap: wrap;
 }
 
@@ -652,9 +555,4 @@ h1 {
     color: #94a3b8; 
 }
 
-/* Social Icons */
-.footer-socials {
-    display: flex;
-    gap: 18px;
-}
 
